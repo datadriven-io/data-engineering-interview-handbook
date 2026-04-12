@@ -9,6 +9,17 @@ If you are preparing for a data engineering interview, you have probably noticed
 
 This handbook fixes that. It is a structured, chapter-by-chapter guide to every topic that shows up in a real DE interview loop, with worked examples, study plans, and links to a library of practice problems you can run in your browser.
 
+## Related repositories
+
+This repo is the **flagship handbook**. The companion repos cover the same material from different angles:
+
+- **[data-engineer-interview-handbook](https://github.com/datadriven-io/data-engineer-interview-handbook)** is the **7 day quickstart**, for candidates with an onsite next week.
+- **[data-engineering-interview-questions](https://github.com/datadriven-io/data-engineering-interview-questions)** is the **1400+ question bank** (SQL, Python, schema design, pipelines).
+- **[awesome-data-engineering-interview](https://github.com/datadriven-io/awesome-data-engineering-interview)** is the **curated resource list** (books, blogs, courses).
+- **[system-design-for-data-engineers](https://github.com/datadriven-io/system-design-for-data-engineers)** has **120 pipeline system design case studies**.
+- **[data-engineering-cheatsheet](https://github.com/datadriven-io/data-engineering-cheatsheet)** is the **single page recall reference** for the night before.
+- **[data-engineer-interview-prep](https://github.com/datadriven-io/data-engineer-interview-prep)** is the **8 week practice schedule** with weekly problem sets and a journal template.
+
 ## Table of contents
 
 1. [How to use this handbook](#how-to-use-this-handbook)
@@ -323,6 +334,52 @@ This handbook is community maintained. Three ways to help:
 3. **Share a war story.** Each chapter has a `war-stories.md` file. Add yours (anonymized).
 
 Please run `markdownlint` on your changes before opening a PR.
+
+## Frequently asked questions
+
+### What does a data engineering interview actually cover?
+
+A typical senior data engineering interview loop has five technical rounds: a SQL screen, a Python or coding round, a data modeling round, a pipeline system design round, and a behavioral round. SQL and pipeline system design are the two highest weight rounds. Each chapter of this handbook is mapped to one round, so you can prep round by round.
+
+### How is a data engineering interview different from a software engineering interview?
+
+Software engineering interviews lean on algorithms, data structures, and microservice system design. Data engineering interviews lean on SQL fluency, schema and dimensional modeling, and end to end data pipeline design. You will rarely be asked to invert a binary tree in a DE loop. You will almost always be asked to write a window function and to design a pipeline that handles backfills, late data, and idempotency.
+
+### How long should I prepare for a data engineering interview?
+
+If you are already a working data engineer, two to four weeks of focused prep is usually enough. If you are switching from analytics or software engineering, plan eight to twelve weeks. The [study plans](#study-plans) section above includes a 4 week sprint, an 8 week build, and a 12 week ramp.
+
+### Do data engineering interviews have LeetCode style questions?
+
+Most do not. DE Python rounds favor data manipulation patterns (chunking, sessionization, hash partitioning, interval merging, dedup) over classic algorithm puzzles. You should know the common patterns cold, but you can skip dynamic programming and graph traversal unless you are interviewing at a place that explicitly screens for them.
+
+### What is the hardest round in a data engineering interview?
+
+For senior and staff loops, schema design and pipeline system design are the rounds where most candidates lose offers. Both reward depth in tradeoffs, and both punish vague answers. Chapters 3, 4, and 5 of this handbook give them the most space for that reason.
+
+### What SQL topics are tested in data engineer interviews?
+
+Window functions are the single highest leverage topic. Beyond that: joins (inner, left, full, semi, anti, lateral), aggregation (group by, conditional, grouping sets), date and time handling, and reasoning about query plans and partitioning. The [SQL chapter](#chapter-1-sql-for-data-engineers) covers all of these with worked examples and practice sets.
+
+### What Python topics are tested in data engineer interviews?
+
+Dictionaries and lists, comprehensions, generators, complexity awareness, and the common DE patterns: batching, sessionization, dedup, retries, interval merging, hash partitioning, schema evolution. See the [Python chapter](#chapter-2-python-for-data-engineers) for the full list.
+
+### How do I prepare for the system design round of a data engineering interview?
+
+Use the eight beat framework in [Chapter 5](#chapter-5-system-design-for-data-engineers): clarify, estimate, pick freshness, pick batch vs stream, pick storage, sketch topology, address failure modes, talk cost. Practice on at least three case studies before your loop. The companion repo [system-design-for-data-engineers](https://github.com/datadriven-io/system-design-for-data-engineers) has 120 case studies.
+
+### What books should I read for a data engineering interview?
+
+The shortlist: *Designing Data Intensive Applications* (Martin Kleppmann), *The Data Warehouse Toolkit* (Ralph Kimball), *Fundamentals of Data Engineering* (Joe Reis and Matt Housley), and *Streaming Systems* (Tyler Akidau et al). The [resources section](#resources) has the long list.
+
+### Which companies have the hardest data engineering interviews?
+
+Subjective, but the consensus answers are Stripe, Netflix, Databricks, and Two Sigma. Each has a distinct flavor. The [company specific guides](#chapter-7-company-specific-guides) cover loop structure and question style for the most common targets.
+
+### Is this handbook free?
+
+Yes. CC BY-SA 4.0. Copy, fork, and republish freely as long as you credit the original and share derivative work under the same license.
 
 ## License
 
