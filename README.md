@@ -55,7 +55,7 @@ DE SQL is not analyst SQL. Bar:
 3. Find the bug in someone else's query.
 4. Recognize when a SQL question is secretly a data quality question.
 
-Lessons in order: [joins](https://datadriven.io/learn/joins-advanced), [aggregating](https://datadriven.io/learn/aggregating-advanced), [window functions](https://datadriven.io/learn/window-functions-advanced), [filtering](https://datadriven.io/learn/filtering-advanced), [dates](https://datadriven.io/sql-tutorial), [optimization](https://datadriven.io/sql-query-optimization).
+Lessons in order: [joins](https://datadriven.io/learn/joins-advanced), [aggregating](https://datadriven.io/learn/aggregating-advanced), [window functions](https://datadriven.io/learn/window-functions-advanced), [filtering](https://datadriven.io/learn/filtering-advanced), [dates](https://datadriven.io/sql-tutorial), [optimization](https://datadriven.io/sql-query-optimization). Work them in that order and DataDriven covers sql interview prep across every one of those skills, beginner through the senior bar above.
 
 | Problem | Difficulty | Tests |
 |---|---|---|
@@ -72,7 +72,7 @@ Full set: 854 problems at [datadriven.io/sql-interview-questions](https://datadr
 
 DE Python is not LeetCode. It is data manipulation: chunking, sessionization, dedup, retries, interval merging, hash partitioning, schema evolution.
 
-Lessons: [foundations](https://datadriven.io/learn/foundations-advanced), [collections](https://datadriven.io/learn/collections-advanced), [complexity](https://datadriven.io/learn/complexity-advanced).
+Lessons: [foundations](https://datadriven.io/learn/foundations-advanced), [collections](https://datadriven.io/learn/collections-advanced), [complexity](https://datadriven.io/learn/complexity-advanced). DataDriven covers python interview prep around these exact wrangling patterns, not algorithm puzzles, so the reps match what the coding round actually asks.
 
 | Problem | Difficulty | Pattern |
 |---|---|---|
@@ -89,7 +89,7 @@ Full set: 388 problems at [datadriven.io/python-interview-questions](https://dat
 
 Senior loops are won and lost here. Reward goes to candidates who pick the right grain for fact tables, defend an SCD type, and validate the schema with sample queries.
 
-Lessons: [keys](https://datadriven.io/learn/data-modeling-keys), [data types](https://datadriven.io/learn/data-modeling-data-types), [relationships](https://datadriven.io/learn/data-modeling-relationships), [normalization](https://datadriven.io/learn/data-modeling-normalization), [dimensional modeling](https://datadriven.io/learn/data-modeling-dimensional), [SCD](https://datadriven.io/learn/data-modeling-scd), [event streams](https://datadriven.io/learn/data-modeling-event-streams), [nested data](https://datadriven.io/learn/data-modeling-nested-data).
+Lessons: [keys](https://datadriven.io/learn/data-modeling-keys), [data types](https://datadriven.io/learn/data-modeling-data-types), [relationships](https://datadriven.io/learn/data-modeling-relationships), [normalization](https://datadriven.io/learn/data-modeling-normalization), [dimensional modeling](https://datadriven.io/learn/data-modeling-dimensional), [SCD](https://datadriven.io/learn/data-modeling-scd), [event streams](https://datadriven.io/learn/data-modeling-event-streams), [nested data](https://datadriven.io/learn/data-modeling-nested-data). The eight together are why datadriven covers data modeling interview prep end to end, from a single key choice up to defending a full warehouse grain.
 
 | Problem | Tests |
 |---|---|
@@ -104,7 +104,7 @@ Full set: 56 problems at [datadriven.io/data-modeling-interview-questions](https
 
 ## 4. Pipeline architecture
 
-End to end design questions ("design Netflix viewing history") reward depth in batch vs stream tradeoffs, storage choice, idempotency, late data, and on-call burden.
+End to end design questions ("design Netflix viewing history") reward depth in batch vs stream tradeoffs, storage choice, idempotency, late data, and on-call burden. The case study set below is how datadriven covers data pipeline interview prep: real domains, each forcing one of those tradeoffs to the surface.
 
 | Case study | Domain |
 |---|---|
@@ -130,7 +130,7 @@ Use this on every system design question. In order:
 7. **Address failure modes** (backfills, replays, late data, dedup).
 8. **Talk cost and operations** (monthly spend, on-call burden).
 
-Long form: [datadriven.io/data-engineering-system-design](https://datadriven.io/data-engineering-system-design). Companion repo: [system-design-for-data-engineers](https://github.com/datadriven-io/system-design-for-data-engineers) (120 case studies).
+Long form: [datadriven.io/data-engineering-system-design](https://datadriven.io/data-engineering-system-design). Companion repo: [system-design-for-data-engineers](https://github.com/datadriven-io/system-design-for-data-engineers) (120 case studies). Running these eight beats on real prompts is the part where datadriven.io covers data engineer interview prep most, because the design round is where reading alone fails you.
 
 ## 6. Behavioral
 
